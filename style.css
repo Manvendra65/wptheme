@@ -1,15 +1,14 @@
 /*
 Theme Name: bigstore
-Theme URI: http://wordpress.bigstore.itembridge.com/
-Author: InfoStyle
-Author URI: http://themeforest.net/user/InfoStyle
-Description: bigstore e-commerce theme is created to make impression on you and your customers.
+Theme URI: 
+Author: Manvendra
+Author URI: 
+Description: bigstore e-commerce theme is created to make easy create a website.
 Version: 1.0
-License: ThemeForest Regular & Extended License
-License URI: http://themeforest.net/licenses/regular_extended
 Tags: light, white, black, gray, one-column, two-columns, left-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, microformats, post-formats, theme-options
-Text Domain: bigstore
 */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,600);
 
 /*** => Grid ***/
 body{
@@ -675,16 +674,6 @@ body{
     margin: 0 auto;
     color:#444;
     font: normal 13px/20px Segoeui, Arial, Verdana, serif;
-    background: #fff;
-    background: -moz-linear-gradient(top,  #e43750 0%, #e43750 6.666%, #7fcbce 6.666%, #7fcbce 13.333%, #aadce0 13.333%, #aadce0 20%, #f5f7f9 20%, #f5f7f9 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e43750), color-stop(6.666%,#e43750), color-stop(6.666%,#7fcbce), color-stop(13.333%,#7fcbce), color-stop(13.333%,#aadce0), color-stop(20%,#aadce0), color-stop(20%,#f5f7f9), color-stop(100%,#f5f7f9));
-    background: -webkit-linear-gradient(top,  #e43750 0%,#e43750 6.666%,#7fcbce 6.666%,#7fcbce 13.333%,#aadce0 13.333%,#aadce0 20%,#f5f7f9 20%, #f5f7f9 100%);
-    background: -o-linear-gradient(top,  #e43750 0%,#e43750 6.666%,#7fcbce 6.666%,#7fcbce 13.333%,#aadce0 13.333%,#aadce0 20%,#f5f7f9 20%, #f5f7f9 100%);
-    background: -ms-linear-gradient(top,  #e43750 0%,#e43750 6.666%,#7fcbce 6.666%,#7fcbce 13.333%,#aadce0 13.333%,#aadce0 20%,#f5f7f9 20%, #f5f7f9 100%);
-    background: linear-gradient(to bottom,  #e43750 0%,#e43750 6.666%,#7fcbce 6.666%,#7fcbce 13.333%,#aadce0 13.333%,#aadce0 20%,#f5f7f9 20%, #f5f7f9 100%);
-    background-color: #fff;
-    background-size: 100% 45px;
-    background-repeat: repeat-x;
     overflow-x: hidden;
 }
 .surely{

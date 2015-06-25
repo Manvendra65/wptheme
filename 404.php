@@ -12,7 +12,7 @@
 
                         <div class="grid_8">
                                 <h2></h2>
-                                <p><strong><?php _e( 'he page you requested was not found, and we have a fine guess why...', 'bigstore' ); ?></strong></p>
+                                <p><strong><?php _e( 'The page you requested was not found, and we have a fine guess why...', 'bigstore' ); ?></strong></p>
                                 <ul>
                                         <li><?php _e( 'If you typed the URL directly, please make sure the spelling is correct.', 'bigstore' ); ?></li>
                                         <li><?php _e( 'If you clicked on a link to get here, the link is outdated.', 'bigstore' ); ?></li>
