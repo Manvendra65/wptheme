@@ -8,7 +8,11 @@ Version: 1.0
 Tags: light, white, black, gray, one-column, two-columns, left-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, microformats, post-formats, theme-options
 */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,600);
+/*********
+* Fonts *
+*********/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic);
 
 /*** => Grid ***/
 body{
@@ -241,58 +245,6 @@ body{
     zoom: 1;
 }
 
-/*********
-* Fonts *
-*********/
-@font-face{
-    font-family: Bitter;
-    src: url(./fonts/Bitter.eot)
-}
-@font-face{
-    font-family: Bitter;
-    src: url(./fonts/Bitter.ttf);
-}
-@font-face{
-    font-family: Bitter-Bold;
-    src: url(./fonts/Bitter-Bold.eot)
-}
-@font-face{
-    font-family: Bitter-Bold;
-    src: url(./fonts/Bitter-Bold.ttf);
-}
-@font-face{
-    font-family: Bitter-Italic;
-    src: url(./fonts/Bitter-Italic.eot)
-}
-@font-face{
-    font-family: Bitter-Italic;
-    src: url(./fonts/Bitter-Italic.ttf);
-}
-@font-face{
-    font-family: Segoeui;
-    src: url(./fonts/Segoeui.eot)
-}
-@font-face{
-    font-family: Segoeui;
-    src: url(./fonts/Segoeui.ttf);
-}
-@font-face{
-    font-family: Segoeui-Bold;
-    src: url(./fonts/Segoeui-Bold.eot)
-}
-@font-face{
-    font-family: Segoeui-Bold;
-    src: url(./fonts/Segoeui-Bold.ttf);
-}
-@font-face{
-    font-family: Segoeui-Italic;
-    src: url(./fonts/Segoeui-Italic.eot)
-}
-@font-face{
-    font-family: Segoeui-Italic;
-    src: url(./fonts/Segoeui-Italic.ttf);
-}
-
 *{
     padding:0;
     margin:0; 
@@ -338,7 +290,7 @@ nav a{
     text-decoration: none;
 }
 b,strong{
-    font-family: Segoeui-Bold, Arial, Verdana, serif;
+    font-family: Arial, Verdana, serif; font-weight: bold;
 }
 p, b, li, strong{
     font-size:13px; line-height: 20px;
@@ -350,7 +302,7 @@ ins{
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Bitter, Myriad Pro, Verdana, serif;
+    font-family: 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     font-weight: normal;
     color: #444;
     line-height: 1;
@@ -418,7 +370,7 @@ select,
     position: relative;
     height: 33px;
     padding-left: 10px;
-    font: normal 12px/33px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/33px Arial, Verdana, serif;
     color: #444;
     text-decoration: none!important;
     background: #fff;
@@ -456,7 +408,7 @@ select,
 .selectBox-dropdown-menu{
     position: absolute;
     list-style: none;
-    font:normal 12px/33px Segoeui, Arial, Verdana, serif;
+    font:normal 12px/33px Arial, Verdana, serif;
     color: #777;
     background: #fff;
     margin: 0;
@@ -491,7 +443,7 @@ input[type="submit"]{
     background: #e43750;
     color: #fefefe;
     text-align: center;
-    font: normal 14px Segoeui, Myriad Pro, Verdana, serif;
+    font: normal 14px Arial, Verdana, serif;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -khtml-border-radius: 2px;
@@ -565,7 +517,7 @@ textarea{
 .required{
     color: #c3293a;
     font-weight: normal;
-    font-family: Segoeui, Arial, Verdana, serif;
+    font-family: Arial, Verdana, serif;
     margin: 0 2px;
 }
 label{
@@ -581,7 +533,7 @@ blockquote{
     border-left: 1px solid #e0e0e0;
     padding: 0 0 0 25px;
     color: #444;
-    font:italic 16px/25px Bitter-Italic, Myriad Pro, Verdana, serif;
+    font:italic 16px/25px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic; font-weight: 400;
 }
 
 /*** IMG ***/
@@ -631,7 +583,7 @@ img.aligncenter{
 }
 .wp-caption-text, 
 .gallery-caption{
-    font:italic 12px/17px Bitter-Italic, Myriad Pro, Verdana, serif;
+    font:italic 12px/17px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic; font-weight: 400;
     color: #777;
     margin: 0!important;
     padding: 5px 10px;
@@ -646,7 +598,7 @@ table{
     text-align: center;
     border-collapse: collapse;
     border-top: 1px solid #e0e0e0;
-    font:normal 12px Segoeui, Arial, Verdana, serif;
+    font:normal 12px Arial, Verdana, serif;
 }
 td{
     height: 49px;
@@ -658,7 +610,7 @@ th{
     height: 49px;
     vertical-align: middle;
     border-bottom: 1px solid #a8dade;
-    font:normal 13px Bitter, Myriad Pro, Verdana, serif;
+    font:normal 13px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 td:nth-child(even){
     background: #f7f7f7;
@@ -673,7 +625,7 @@ td:nth-child(even){
 body{
     margin: 0 auto;
     color:#444;
-    font: normal 13px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/20px Arial, Verdana, serif;
     overflow-x: hidden;
 }
 .surely{
@@ -692,12 +644,12 @@ body{
     padding: 0 0 0 24px;
     margin: 9px 0 0 0;
     background: url(./images/bg_phone_top.png) no-repeat left center;
-    font: normal 11px/36px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/36px Arial, Verdana, serif;
 }
 .welcome{
     margin: 9px 0 0 0;
     color: #777;
-    font:normal 12px/36px Bitter, Myriad Pro, Verdana, serif;
+    font:normal 12px/36px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 .welcome a{
     text-decoration: none;
@@ -734,7 +686,7 @@ body{
     background: #e43750!important;
     color: #fff;
     text-decoration: none;
-    font: bold 11px/36px Segoeui-Bold, Arial, Verdana, serif;
+    font: 600 11px/36px Arial, Verdana, serif;
     float: left;
 }
 .lang{
@@ -742,7 +694,7 @@ body{
 }
 .lang ul li a{
     width: 36px;
-    font: normal 11px/36px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/36px Arial, Verdana, serif;
 }
 .lang ul li a:hover,
 .valuta ul li a:hover{
@@ -750,10 +702,10 @@ body{
     text-decoration: none;
 }
 .valuta ul li.curent a{
-    font: bold 13px/36px Bitter-Bold, Arial, Verdana, serif;
+    font: 600 13px/36px 'Open Sans', Arial, Verdana, serif;
 }
 .valuta ul li a{
-    font: normal 13px/36px Bitter, Arial, Verdana, serif;
+    font: 400 13px/36px 'Open Sans', Arial, Verdana, serif;
 }
 
 /**********
@@ -774,7 +726,7 @@ header#branding .grid_6{
     padding: 0;
 }
 #site_description{
-    font: italic 11px/16px Bitter-Italic, Myriad Pro, Verdana, serif;
+    font: italic 11px/16px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic; font-weight: 400;
     color: #aaa;
     padding: 0;
 }
@@ -797,7 +749,7 @@ form.search .entry_form,
     -moz-border-radius: 2px;
     -khtml-border-radius: 2px;
 
-    font: normal 12px Segoeui, Arial, Verdana, serif;
+    font: normal 12px Arial, Verdana, serif;
 }
 form.search input.entry_form:hover, 
 #branding #searchform #s:hover{
@@ -828,7 +780,7 @@ form.search input.entry_form:focus,
     color: #444;
     text-align: center;
     text-decoration: none;
-    font: normal 11px/35px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/35px Arial, Verdana, serif;
     background-color: #f1f3f5;
     background-image: url(./images/bg_cart_nav.png);
     background-repeat: no-repeat;
@@ -907,16 +859,16 @@ border-top: 1px solid #e0e0e0;
     width: 190px;
     height: 56px;
     padding: 0 0 0 10px;
-    font: normal 12px/17px Bitter, Arial, Verdana, serif;
+    font: normal 12px/17px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
 }
 #cart_nav .cont_cart a.title{
     color: #777;
-    font: normal 12px/17px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/17px Arial, Verdana, serif;
     text-decoration: none;
 }
 #cart_nav .cont_cart a.title h4{
     color: #777;
-    font: normal 12px/17px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/17px Arial, Verdana, serif;
     padding: 0;
 }
 #cart_nav .cont_cart a.title:hover h4{
@@ -928,7 +880,7 @@ border-top: 1px solid #e0e0e0;
 #cart_nav .cont_cart .price{
     color: #444;
     margin: 10px 0 0 0;
-    font: normal 12px/17px Bitter, Arial, Verdana, serif;
+    font: normal 12px/17px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
 }
 #cart_nav .cart_list li.buttons{
     border: 0 none;
@@ -945,7 +897,7 @@ border-top: 1px solid #e0e0e0;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    font: normal 11px/34px Segoeui, Myriad Pro, Verdana, serif;
+    font: normal 11px/34px Arial, Verdana, serif;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -khtml-border-radius: 2px;
@@ -969,7 +921,7 @@ border-top: 1px solid #e0e0e0;
 nav.private{
     float: right;
     margin: 16px 0 0 0;
-    font: normal 12px Segoeui, Arial, Verdana, serif;
+    font: normal 12px Arial, Verdana, serif;
 }
 nav.private ul{
     list-style: none;
@@ -1038,7 +990,7 @@ nav.private ul li a:hover{
         padding: 0 16px;
         color: #444;
         text-transform: uppercase;
-        font: normal 14px/50px Bitter, Myriad Pro, Verdana, serif;
+        font: normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
         border: 1px solid #f5f7f9;
         background: #f5f7f9;
     }
@@ -1084,7 +1036,7 @@ nav.private ul li a:hover{
         height: 39px;
         color: #777;
         text-transform: capitalize;
-        font: normal 13px/39px Bitter, Myriad Pro, Verdana, serif;
+        font: normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
         background: #fff;
     }
     .primary ul ul.sub-menu li+li a{
@@ -1228,13 +1180,13 @@ nav.private ul li a:hover{
 #breadcrumb, 
 .woocommerce-breadcrumb{
     clear: both;
-    font: normal 11px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/20px Arial, Verdana, serif;
     color: #999;
     margin: 0;
 }
 #breadcrumb a, 
 .woocommerce-breadcrumb a{
-    font: normal 11px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/20px Arial, Verdana, serif;
     color: #777;
     text-decoration: none;
     margin: 0 5px;
@@ -1303,14 +1255,14 @@ nav.private ul li a:hover{
     padding: 0 0 17px 0;
     border-bottom: 1px solid #e0e0e0;
     color: #444;
-    font: normal 18px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 #sidebar aside h4{
     margin: 10px 0 13px 0;
     padding: 0 0 10px 0;
     border-bottom: 1px solid #e0e0e0;
     color: #444;
-    font: bold 13px/13px Segoeui, Arial, Verdana, serif;
+    font: bold 13px/13px Arial, Verdana, serif;
 }
 
 /*** Sidebar Input ***/
@@ -1334,7 +1286,7 @@ nav.private ul li a:hover{
     border: 0 none;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    font: normal 13px/40px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/40px Arial, Verdana, serif;
     text-decoration: none;;
 }
 #sidebar aside .product-categories li+li a,
@@ -1361,7 +1313,7 @@ nav.private ul li a:hover{
     margin: 0 -6px;
     padding: 0 6px;
     text-decoration: none;
-    font: bold 13px/40px Segoeui, Arial, Verdana, serif;
+    font: bold 13px/40px Arial, Verdana, serif;
 }
 #sidebar aside .sub-menu{
     display: none;
@@ -1388,7 +1340,7 @@ nav.private ul li a:hover{
     color: #fefefe;
     text-align: center;
     text-decoration: none;
-    font: normal 13px/35px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/35px Arial, Verdana, serif;
     margin: 0;
     padding: 0 20px;
     background-color: #e43750;
@@ -1411,7 +1363,7 @@ nav.private ul li a:hover{
     padding: 0 0 16px 0;
     border-bottom: 1px solid #e0e0e0;
     color: #444;
-    font: normal 18px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 
 #sidebar aside.widget_product_search h3 ~ form label {
@@ -1429,7 +1381,7 @@ nav.private ul li a:hover{
 
 /*** specials ***/
 #sidebar aside .product_list_widget li{
-    font: normal 12px/18px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/18px Arial, Verdana, serif;
     overflow: hidden;
     padding: 10px 0;
 }
@@ -1445,7 +1397,7 @@ nav.private ul li a:hover{
     padding: 2px;
 }
 #sidebar aside .product_list_widget li a{
-    font: normal 12px/18px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/18px Arial, Verdana, serif;
     color: #444;
     text-decoration: none;
 }
@@ -1462,7 +1414,7 @@ nav.private ul li a:hover{
 #sidebar aside .product_list_widget li .amount{
     color: #2e8f9a;
     display: block;
-    font: normal 12px/18px Bitter, Arial, Verdana, serif;
+    font: normal 12px/18px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
 }
 #sidebar aside .product_list_widget li del{
     display: block;
@@ -1483,7 +1435,7 @@ nav.private ul li a:hover{
     color: #444;
     text-align: center;
     text-decoration: none;
-    font: normal 11px/35px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/35px Arial, Verdana, serif;
     background: url(./images/bg_cart_nav.png) no-repeat 10px 50% #f1f3f5;
     border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1499,20 +1451,20 @@ nav.private ul li a:hover{
 }
 #sidebar aside.widget_shopping_cart .cont_cart a.title{
     color: #777;
-    font: normal 12px/17px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/17px Arial, Verdana, serif;
     text-decoration: none;
 }
 #sidebar aside.widget_shopping_cart .cont_cart a.title h4{
     border: 0 none;
     color: #777;
-    font: normal 12px/17px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/17px Arial, Verdana, serif;
     margin: 0;
     padding: 0;
 }
 #sidebar aside.widget_shopping_cart .cont_cart .price {
     color: #444;
     margin: 10px 0 0 0;
-    font: normal 12px/17px Bitter, Arial, Verdana, serif;
+    font: normal 12px/17px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
 }
 #sidebar aside.widget_shopping_cart .buttons{
     border: 0 none;
@@ -1521,7 +1473,7 @@ nav.private ul li a:hover{
 }
 #sidebar aside.widget_shopping_cart .buttons a, 
 #sidebar aside.widget_shopping_cart .buttons a:hover{
-    font: normal 11px/34px Segoeui, Myriad Pro, Verdana, serif;
+    font: normal 11px/34px Arial, Verdana, serif;
     color: #fff;
     margin: 0 0 10px 0;
 }
@@ -1529,7 +1481,7 @@ nav.private ul li a:hover{
 /*** tags ***/
 #sidebar aside .tagcloud a{
     color: #777;
-    font: normal 13px/26px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/26px Arial, Verdana, serif;
     text-decoration: none
 }
 #sidebar aside .tagcloud a:hover{
@@ -1683,7 +1635,7 @@ h1.post_title,
     width: 307px;
 }
 #content.catalog .products.list h3.title{
-    font: normal 13px/20px Bitter, Arial, Verdana, serif;
+    font: normal 13px/20px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
     overflow: hidden;
     padding: 0 0 15px 0;
     text-overflow: ellipsis;
@@ -1694,7 +1646,7 @@ h1.post_title,
 }
 #content.catalog .products.list .description{
     color: #444;
-    font:normal 12px/18px Segoeui, Arial, Verdana, serif;
+    font:normal 12px/18px Arial, Verdana, serif;
     height: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1703,7 +1655,7 @@ h1.post_title,
     height: 14px;
     margin: 0 0 20px 0;
     color: #777;
-    font: normal 11px/16px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/16px Arial, Verdana, serif;
 }
 #content.catalog .products.list .entry_content .review a{
     display: block;
@@ -1750,7 +1702,7 @@ a.more:hover{
 #content.catalog .products.list .cart .price{
     color: #2e8f9a;
     display: block;
-    font: normal 18px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     margin: 0 0 20px 0;
 }
 #content.catalog .products.list .cart .price .from{
@@ -1768,7 +1720,7 @@ a.more:hover{
 #content.catalog .products.list .cart .price del .amount{
     padding: 5px 0 0 0;
     color: #777;
-    font: normal 13px/13px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/13px Arial, Verdana, serif;
     margin: 0;
 }
 #content.catalog .products.list .cart a.add_to_cart_button, 
@@ -1779,7 +1731,7 @@ a.more:hover{
     color: #fefefe;
     text-align: center;
     text-decoration: none;
-    font: bold 13px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 13px/35px Arial, Verdana, serif;
     margin: 0;
     background: #e43750;
     border-radius: 2px;
@@ -1859,12 +1811,12 @@ a.more:hover{
     padding: 0 15px;
     margin: 0;
     color: #777;
-    font: normal 13px/39px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/39px Arial, Verdana, serif;
     text-decoration: none;
 }
 .navigation li a.prev,
 .navigation li a.next{
-    font: normal 20px/32px Segoeui, Arial, Verdana, serif;
+    font: normal 20px/32px Arial, Verdana, serif;
     color: #444;
 }
 .navigation li a.next {
@@ -1884,7 +1836,7 @@ a.more:hover{
     margin: 15px  0!important;
     color: #777;
     text-align: center;
-    font: italic 11px/11px Segoeui-Italic, Arial, Verdana, serif;
+    font: italic 11px/11px Arial, Verdana, serif; font-style: italic;
 }
 .navigation.pagination{
     margin-bottom: 25px;
@@ -1897,7 +1849,7 @@ a.more:hover{
     padding: 0 15px;
     margin: 0 0 0 -4px;
     color: #777;
-    font: normal 13px/39px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/39px Arial, Verdana, serif;
     text-decoration: none;
     //display: block;
     //float:left;
@@ -2043,7 +1995,7 @@ a.more:hover{
     height: 29px;
     margin: 0 0 15px 0;
     color: #777;
-    font: normal 11px/29px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/29px Arial, Verdana, serif;
 }
 .product_page .entry_content .review .no-rating a, 
 .product_page .entry_content .review .add_your_review a{
@@ -2057,7 +2009,7 @@ a.more:hover{
     border-radius: 2px;
     -moz-border-radius: 2px;
     -khtml-border-radius: 2px;
-    font: normal 11px/29px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/29px Arial, Verdana, serif;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -2090,7 +2042,7 @@ a.more:hover{
 }
 .product_page .entry_content .review .number-reviews{
     color: #777;
-    font: normal 11px/29px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/29px Arial, Verdana, serif;
     text-transform: uppercase;
 }
 .product_page .entry_content .review .number-reviews .title-rat{
@@ -2103,7 +2055,7 @@ a.more:hover{
 }
 .product_page .entry_content .price-block{
     float: right;
-    font: normal 18px/20px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/20px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     color: #2e8f9a;
     margin: 0 0 20px 0;
     position: relative;
@@ -2111,7 +2063,7 @@ a.more:hover{
 }
 .product_page .entry_content .price-block .price .from{
     color: #444;
-    font: normal 16px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 16px/20px Arial, Verdana, serif;
 }
 .product_page .entry_content .price-block .price > del{
     display: block;
@@ -2120,7 +2072,7 @@ a.more:hover{
     right: 0;
 }
 .product_page .entry_content .price-block del .amount{
-    font: normal 13px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/20px Arial, Verdana, serif;
     color: #777;
     text-decoration: line-through;
 }
@@ -2133,7 +2085,7 @@ a.more:hover{
 }
 #content.product_page .entry_content .stock{
     float: left;
-    font: normal 12px/16px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/16px Arial, Verdana, serif;
     color: #277127;
     margin: 0 5px 0 0;
     padding: 0 0 0 15px;
@@ -2141,7 +2093,7 @@ a.more:hover{
 }
 .product_page .entry_content form.cart{
     border-top: 1px solid #e0e0e0;
-    font: normal 13px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/20px Arial, Verdana, serif;
     color: #777;
     padding: 25px 0 37px 0;
     position: relative;
@@ -2175,11 +2127,11 @@ a.more:hover{
 }
 #content.product_page .entry_content form.cart .single_variation_wrap .single_variation .price{
     float: right;
-    font: normal 18px/33px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/33px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     color: #2e8f9a;
 }
 #content.product_page .entry_content form.cart .single_variation_wrap .single_variation .price del .amount{
-    font: normal 13px/33px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/33px Arial, Verdana, serif;
     color: #777;
     text-decoration: line-through;
 }
@@ -2219,7 +2171,7 @@ a.more:hover{
     color: #fefefe;
     text-align: center;
     text-decoration: none;
-    font: bold 13px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 13px/35px Arial, Verdana, serif;
     background: #e43750;
     border-radius: 2px;
     -moz-border-radius: 2px;
@@ -2240,7 +2192,7 @@ a.more:hover{
 
 .product_page .entry_content form.cart .woo_compare_button_container{
     float: left;
-    font: normal 12px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/20px Arial, Verdana, serif;
     color: #777;
     width: 130px;
 }
@@ -2252,7 +2204,7 @@ a.more:hover{
     height: 12px;
     padding: 0 0 0 17px;
     background: url(./images/bg_obn.png)  no-repeat 0 50%;
-    font: normal 12px/12px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/12px Arial, Verdana, serif;
     color: #777;
     text-decoration: none;
 }
@@ -2285,7 +2237,7 @@ a.more:hover{
     padding: 0 20px;
     height: 33px;
     color: #777;
-    font: normal 13px/34px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 13px/34px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     text-decoration: none;
     border: 1px solid #f1f3f5;
     background: #f1f3f5;
@@ -2303,7 +2255,7 @@ a.more:hover{
 .woocommerce-tabs .tabs .active a{
     cursor: default;
     color: #444;
-    font: normal 13px/34px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 13px/34px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     text-decoration: none;
     border: 1px solid #e0e0e0;
     border-bottom: 1px solid #fff;
@@ -2358,11 +2310,11 @@ a.more:hover{
 #tab-reviews #comments .commentlist li .autor{
     float: left;
     color: #444;
-    font: normal 14px/21px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 14px/21px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 #tab-reviews #comments .commentlist li time{
     color: #777;
-    font: normal 12px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/20px Arial, Verdana, serif;
 }
 #tab-reviews .star-rating{
     background: url(./images/rating.png) no-repeat 0 0;
@@ -2396,7 +2348,7 @@ a.more:hover{
 #commentform label{
     color: #707070;
     display: block;
-    font: bold 13px/20px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 13px/20px Arial, Verdana, serif; font-weight: bold;
 }
 #commentform .comment-form-rating{
     clear: both;
@@ -2407,7 +2359,7 @@ a.more:hover{
 #commentform .comment-form-rating > label{
     color: #777;
     display: inline;
-    font: bold 12px/17px Segoeui, Arial, Verdana, serif;
+    font: bold 12px/17px Arial, Verdana, serif;
 }
 #commentform .comment-form-rating .ratings-input{
     margin: 0 0 0 5px;
@@ -2419,7 +2371,7 @@ a.more:hover{
 #commentform .comment-form-rating .ratings-input span.number{
     position: absolute;
     color: #999;
-    font: normal 11px/11px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/11px Arial, Verdana, serif;
     margin: 21px 0 0 5px;
 }
 #commentform input[type="text"],
@@ -2461,7 +2413,7 @@ a.more:hover{
 #commentform #submit{
     margin: 0;
     min-width: 172px;
-    font: bold 14px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 14px/35px Arial, Verdana, serif;
 }
 
 /*** Related Products ***/
@@ -2561,7 +2513,7 @@ a.more:hover{
 #customer_login label{
     display: block;
     color: #707070;
-    font: bold 13px/13px Segoeui-Bold, Myriad Pro, Verdana, serif;
+    font: bold 13px/13px Arial, Verdana, serif; font-weight: bold;
 }
 #customer_login input[type="text"],
 #customer_login input[type="email"], 
@@ -2579,7 +2531,7 @@ a.more:hover{
     float: left;
     margin: 10px 0 0 0;
     padding: 0 20px;
-    font: bold 14px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 14px/35px Arial, Verdana, serif; font-weight: bold;
 }
 
 /*****************
@@ -2651,7 +2603,7 @@ a.more:hover{
 }
 .woocommerce-cart table.shop_table td.product-name a{
     color: #444;
-    font: normal 12px Segoeui, Arial, Verdana, serif;
+    font: normal 12px Arial, Verdana, serif;
     text-decoration: none;
 }
 .woocommerce-cart table.shop_table td.product-name a:hover{
@@ -2682,7 +2634,7 @@ a.more:hover{
     background-repeat: no-repeat;
     border: 0 none;
     color: #444;
-    font: normal 11px Segoeui, Myriad Pro, Verdana, serif;
+    font: normal 11px Arial, Verdana, serif;
 }
 .woocommerce-cart table.shop_table td.cart_but .checkout-button{
     background-image: none;
@@ -2714,7 +2666,7 @@ a.more:hover{
 .coupon.bottom_block input[type="submit"].button{
     width: 167px;
     margin: 5px 0 0 0;
-    font: bold 14px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 14px/35px Arial, Verdana, serif; font-weight: bold;
 }
 .cart-collaterals .shipping_calculator{
     float: left;
@@ -2743,7 +2695,7 @@ a.more:hover{
 .cart-collaterals .shipping_calculator button{
     width: 150px;
     margin: 5px 0 0 0;
-    font: bold 14px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 14px/35px Arial, Verdana, serif; font-weight: bold;
 }
 .cart-collaterals .total-block{
     float: right;
@@ -2764,7 +2716,7 @@ a.more:hover{
     text-align: right;
     border-collapse: collapse;
     border: 0 none;
-    font: normal 13px/17px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/17px Arial, Verdana, serif;
     color: #777;
 }
 .cart-collaterals .cart_totals td, 
@@ -2777,7 +2729,7 @@ a.more:hover{
 }
 .cart-collaterals .cart_totals .total td span, 
 .cart-collaterals .cart_totals .total th strong{
-    font: normal 18px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     color: #444;
 }
 .cart-collaterals .cart_totals td strong .amount{
@@ -2793,7 +2745,7 @@ a.more:hover{
     float: right;
     width: 90%;
     height: 55px;
-    font: bold 14px/55px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 14px/55px Arial, Verdana, serif; font-weight: bold;
     background-image: url(./images/bg_chackout.png);
     background-position: 95% 48%;
     background-repeat: no-repeat;
@@ -2829,7 +2781,7 @@ a.more:hover{
     width: 648px;
 }
 .contact-us-form label{
-    font: bold 13px/20px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 13px/20px Arial, Verdana, serif; font-weight: bold;
 }
 .contact-us-form .contact{
     margin: 45px 0 0 0;
@@ -2859,7 +2811,7 @@ a.more:hover{
 .contact-us-form .contact input[type="submit"]{
     width: 115px;
     margin: 0px 0 0px 0;
-    font: bold 14px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 14px/35px Arial, Verdana, serif; font-weight: bold;
 }
 .contact-us-form .contact .field {
     margin: 0px 0 0 0;
@@ -2867,7 +2819,7 @@ a.more:hover{
     width: 140px;
     float: right;
     color: #C3293A;
-    font: normal 12px/35px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/35px Arial, Verdana, serif;
 }
 
 /********************
@@ -2878,7 +2830,7 @@ a.more:hover{
 }
 .compare_popup_container .compare_heading h1{
     padding: 0 0 9px 0;
-    font-family: Bitter, Myriad Pro, Verdana, serif;
+    font-family: 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     font-weight: normal;
     font-size: 32px;
     color: #444;
@@ -2918,7 +2870,7 @@ table.compare tr .desc{
     padding: 15px 0 020px;
     width: 160px;
     color: #444!important;
-    font: bold 14px/14px Bitter-Bold, Myriad Pro, Verdana, serif!important;
+    font: bold 14px/14px 'Open Sans', Arial, Verdana, serif; font-weight: 600;
     text-align: left;
     vertical-align: top;
 }
@@ -2953,23 +2905,23 @@ table.compare tr .desc{
 }
 .compare_popup_container .compare_popup_wrap .compare_popup_table td .compare_product_name{
     color: #444;
-    font: normal 12px Segoeui, Arial, Verdana, serif;
+    font: normal 12px Arial, Verdana, serif;
     margin: 0 0 10px;
 }
 .compare_popup_container .compare_popup_wrap .compare_popup_table td .compare_price{
     color: #2e8f9a;
-    font: normal 18px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     margin: 0 0 10px;
 }
 .compare_popup_container .compare_popup_wrap .compare_popup_table td .compare_price del .amount{
     color: #777;
-    font: normal 14px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 14px/20px Arial, Verdana, serif;
     text-decoration: line-through;
 }
 .compare_popup_container .compare_popup_wrap .compare_popup_table td .compare_add_cart a.add_to_cart_button{
     margin: 0 auto;
     width: 120px;
-    font: bold 12px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 12px/35px Arial, Verdana, serif; font-weight: bold;
     text-decoration: none;
     height: 35px;
     display: block;
@@ -3019,7 +2971,7 @@ div.light_square .pp_close:hover{
     text-align: center;
 }
 .left_404 h1.text_404{
-    font: bold 100px/70px Bitter-Bold, Myriad Pro, Verdana, serif;
+    font: bold 100px/70px 'Open Sans', Arial, Verdana, serif; font-weight: 600;
     color: #e43750;
 }
 .left_404 h6{color: #999;}
@@ -3065,7 +3017,7 @@ form.checkout h3{
     padding: 0 20px;
     margin: 0 -20px 20px;
     color: #444;
-    font: normal 18px/49px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/49px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     background: #f5f7f9;
 }
 .form-row{
@@ -3081,7 +3033,7 @@ form.checkout h3{
 .form-row label{
     color: #707070;
     display: block;
-    font: bold 13px/20px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 13px/20px Arial, Verdana, serif; font-weight: bold;
 }
 .form-row input.input-text{
     box-sizing: border-box;
@@ -3095,7 +3047,7 @@ form.checkout h3{
     line-height: 31px;
     margin-top: 5px; 
     padding-left: 10px;
-    font: normal 12px/33px Segoeui, Arial, Verdana, serif;
+    font: normal 12px/33px Arial, Verdana, serif;
     color: #444;
     text-decoration: none!important;
     background: #fff;
@@ -3154,7 +3106,7 @@ form.checkout #order_review #payment li{
 form.checkout #order_review input[type="submit"]{
     float: left;
     margin:0 100px 0 0;
-    font: bold 14px/35px Segoeui-Bold, Arial, Verdana, serif;
+    font: bold 14px/35px Arial, Verdana, serif; font-weight: bold;
 }
 form.checkout .create-account{
     clear: both;
@@ -3186,18 +3138,18 @@ article.post+article.post{
 .search article.post h2.entry-title a{
     color: #444;
     text-decoration: none;
-    font: normal 20px/20px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 20px/20px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 article.post h1 a{
     color: #444;
     text-decoration: none;
-    font: normal 20px/20px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 20px/20px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 article.post .entry-meta{
     padding: 0px 0 0 0;
     min-height: 25px;
     color: #777;
-    font: italic 12px/25px Segoeui-Italic, Arial, Verdana, serif;
+    font: italic 12px/25px Arial, Verdana, serif; font-style: italic;
 }
 article.post .entry-meta .comments-link{
     float: right;
@@ -3205,7 +3157,7 @@ article.post .entry-meta .comments-link{
     height: 25px;
     text-align: center;
     color: #777;
-    font: normal 13px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/20px Arial, Verdana, serif;
     background: url(./images/n_com.png) left top no-repeat;
 }
 article.post .entry-meta .autor-post{
@@ -3214,7 +3166,7 @@ article.post .entry-meta .autor-post{
 article.post .entry-meta .comments-link a{
     text-align: center;
     color: #777;
-    font: normal 13px/20px Segoeui, Arial, Verdana, serif;
+    font: normal 13px/20px Arial, Verdana, serif;
     text-decoration: none;
 }
 #reply-title{
@@ -3432,7 +3384,7 @@ a:hover.arows{
     height: 43px;
     padding: 3px 8px 0;
     margin: 0px;
-    font: normal 13px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 13px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     color:#777;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -3470,7 +3422,7 @@ a:hover.arows{
     width: 81px;
     padding: 1px 8px 0;
     margin: 0px;
-    font: normal 12px/41px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 12px/41px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     color:#2e8f9a;
 }
 .grid .product .cart .price span.from, 
@@ -3497,7 +3449,7 @@ a:hover.arows{
 .related .product .cart .price del .amount, 
 .upsells .product .cart .price del .amount{
     color:#777;
-    font: normal 11px/18px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/18px Arial, Verdana, serif;
     text-decoration: line-through;
     margin: 0px 0 0 0;
 }
@@ -3593,11 +3545,11 @@ a:hover.arows{
 }
 .bottom_block h3{
     margin: 0;
-    font: normal 18px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 }
 .bottom_block p{
     margin:0 0 20px;
-    font: normal 11px/17px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/17px Arial, Verdana, serif;
 }
 #content .bottom_block ul{
     list-style: none;
@@ -3624,7 +3576,7 @@ a:hover.arows{
 #content .news ul li{
     list-style: none;
     margin: 0 0 10px 0;
-    font: normal 11px/17px Segoeui, Arial, Verdana, serif;
+    font: normal 11px/17px Arial, Verdana, serif;
 }
 #content .news ul li a{
     text-decoration: none;
@@ -3638,7 +3590,7 @@ a:hover.arows{
 #content .news ul .post-date{
     display: inline;
     clear: both;
-    font: italic 11px/17px Segoeui-Italic, Arial, Verdana, serif;
+    font: italic 11px/17px Arial, Verdana, serif; font-style: italic;
     margin: 0;
     padding: 0;
 }
@@ -3700,7 +3652,7 @@ form .newsletter-submit:hover{
     margin: 23px 0 0 0;
     min-height: 45px;
     background: url(./images/let_d.png) no-repeat left top;
-    font: italic 11px/17px Bitter-Italic, Myriad Pro, Verdana, serif;
+    font: italic 11px/17px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic; font-weight: 400;
 }
 
 /**********
@@ -3717,7 +3669,7 @@ form .newsletter-submit:hover{
 .f_navigation h3{
     padding: 0 0 10px 0;
     margin: 0 0 23px 0;
-    font: normal 18px/18px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     border-bottom: 1px solid #e0e0e0;
 }
 ul.f_contact li{
@@ -3725,7 +3677,7 @@ ul.f_contact li{
     margin: 0 0 7px 0;
     padding: 0 0 0 25px;
     background: url(./images/li_adr.png) no-repeat 1px 50%;
-    font: 12px/22px Segoeui, Arial, Verdana, serif;
+    font: 12px/22px Arial, Verdana, serif;
 }
 ul.f_contact li+li{
 background: url(./images/li_phone.png) no-repeat 0px 50%;
@@ -3738,7 +3690,7 @@ list-style: none;
 }
 .f_navigation nav.f_menu ul a{
     color: #777;
-    font: 12px/22px Segoeui, Arial, Verdana, serif;
+    font: 12px/22px Arial, Verdana, serif;
 }
 .f_navigation nav.f_menu ul a:hover{
     text-decoration: underline;
@@ -3750,7 +3702,7 @@ list-style: none;
 }
 .f_info p.copyright{
     color: #999;
-    font: 11px/70px Segoeui, Arial, Verdana, serif;
+    font: 11px/70px Arial, Verdana, serif;
 }
 .soc{
     margin: 23px 0 0 0;
@@ -3815,7 +3767,7 @@ list-style: none;
         -webkit-box-sizing: border-box;
         color: #444;
 	display: block;
-        font:normal 14px/50px Bitter, Myriad Pro, Verdana, serif;
+        font:normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
         height: 50px;
         padding: 0 0 0 55px;
         text-transform: uppercase;
@@ -3854,7 +3806,7 @@ list-style: none;
 	color: #777;
         padding: 0 0 0 2.5%;
 	text-transform: capitalize;
-	font:normal 13px/39px Bitter, Myriad Pro, Verdana, serif;
+	font:normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
 	background-color: #fff;
     }
     .primary ul.menu li+li a{
@@ -4419,11 +4371,11 @@ list-style: none;
 	width: 20%;
     }
     #content.catalog .products.list .cart .price{
-        font: normal 16px/18px Bitter, Myriad Pro, Verdana, serif;
+        font: normal 16px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     }
     #content.catalog .products.list .cart a.add_to_cart_button,
     #content.catalog .products.list .cart a.read-more{
-        font: bold 11px/35px Segoeui-Bold, Arial, Verdana, serif;
+        font: bold 11px/35px Arial, Verdana, serif; font-weight: bold;
         margin: 0 0 10px;
         width: 95%;
     }
@@ -4724,7 +4676,7 @@ list-style: none;
      * Page-404 *
      ************/
     .left_404 h1.text_404{
-        font: bold 90px/65px Bitter-Bold, Myriad Pro, Verdana, serif;
+        font: 600 90px/65px 'Open Sans', Arial, Verdana, serif;
     }
     
     /*****************
@@ -5072,7 +5024,7 @@ list-style: none;
         padding: 0 16px;
         color: #444;
         text-transform: uppercase;
-        font: normal 14px/50px Bitter, Myriad Pro, Verdana, serif;
+        font: normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
         border: 1px solid #f5f7f9;
         background: #f5f7f9;
     }
@@ -5118,7 +5070,7 @@ list-style: none;
         height: 39px;
         color: #777;
         text-transform: capitalize;
-        font: normal 13px/39px Bitter, Myriad Pro, Verdana, serif;
+        font: normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
         background: #fff;
     }
     .primary ul ul.sub-menu li+li a{
@@ -5140,7 +5092,7 @@ list-style: none;
     padding: 0 16px;
     color: #444;
     text-transform: uppercase;
-    font: normal 14px/50px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     border: 1px solid #f5f7f9;
     background: #f5f7f9;
 }
@@ -5186,7 +5138,7 @@ list-style: none;
     height: 39px;
     color: #777;
     text-transform: capitalize;
-    font: normal 13px/39px Bitter, Myriad Pro, Verdana, serif;
+    font: normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
     background: #fff;
 }
 *+html .primary ul ul.sub-menu li+li a{
