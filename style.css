@@ -533,7 +533,7 @@ blockquote{
     border-left: 1px solid #e0e0e0;
     padding: 0 0 0 25px;
     color: #444;
-    font:italic 16px/25px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic; font-weight: 400;
+    font:italic 400 16px/25px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic;
 }
 
 /*** IMG ***/
@@ -583,7 +583,7 @@ img.aligncenter{
 }
 .wp-caption-text, 
 .gallery-caption{
-    font:italic 12px/17px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic; font-weight: 400;
+    font:italic 400 12px/17px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic;
     color: #777;
     margin: 0!important;
     padding: 5px 10px;
@@ -610,7 +610,7 @@ th{
     height: 49px;
     vertical-align: middle;
     border-bottom: 1px solid #a8dade;
-    font:normal 13px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 13px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 td:nth-child(even){
     background: #f7f7f7;
@@ -649,7 +649,7 @@ body{
 .welcome{
     margin: 9px 0 0 0;
     color: #777;
-    font:normal 12px/36px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 12px/36px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 .welcome a{
     text-decoration: none;
@@ -726,7 +726,7 @@ header#branding .grid_6{
     padding: 0;
 }
 #site_description{
-    font: italic 11px/16px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic; font-weight: 400;
+    font: italic 400 11px/16px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic;
     color: #aaa;
     padding: 0;
 }
@@ -859,7 +859,7 @@ border-top: 1px solid #e0e0e0;
     width: 190px;
     height: 56px;
     padding: 0 0 0 10px;
-    font: normal 12px/17px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
+    font: 400 12px/17px 'Open Sans', Arial, Verdana, serif;
 }
 #cart_nav .cont_cart a.title{
     color: #777;
@@ -880,7 +880,7 @@ border-top: 1px solid #e0e0e0;
 #cart_nav .cont_cart .price{
     color: #444;
     margin: 10px 0 0 0;
-    font: normal 12px/17px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
+    font: 400 12px/17px 'Open Sans', Arial, Verdana, serif;
 }
 #cart_nav .cart_list li.buttons{
     border: 0 none;
@@ -990,7 +990,7 @@ nav.private ul li a:hover{
         padding: 0 16px;
         color: #444;
         text-transform: uppercase;
-        font: normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+        font: 400 14px/50px 'Open Sans', Myriad Pro, Verdana, serif;
         border: 1px solid #f5f7f9;
         background: #f5f7f9;
     }
@@ -1036,7 +1036,7 @@ nav.private ul li a:hover{
         height: 39px;
         color: #777;
         text-transform: capitalize;
-        font: normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+        font: 400 13px/39px 'Open Sans', Myriad Pro, Verdana, serif;
         background: #fff;
     }
     .primary ul ul.sub-menu li+li a{
@@ -1255,7 +1255,7 @@ nav.private ul li a:hover{
     padding: 0 0 17px 0;
     border-bottom: 1px solid #e0e0e0;
     color: #444;
-    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 #sidebar aside h4{
     margin: 10px 0 13px 0;
@@ -1363,7 +1363,7 @@ nav.private ul li a:hover{
     padding: 0 0 16px 0;
     border-bottom: 1px solid #e0e0e0;
     color: #444;
-    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 
 #sidebar aside.widget_product_search h3 ~ form label {
@@ -1414,7 +1414,7 @@ nav.private ul li a:hover{
 #sidebar aside .product_list_widget li .amount{
     color: #2e8f9a;
     display: block;
-    font: normal 12px/18px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
+    font: 400 12px/18px 'Open Sans', Arial, Verdana, serif;
 }
 #sidebar aside .product_list_widget li del{
     display: block;
@@ -1464,7 +1464,7 @@ nav.private ul li a:hover{
 #sidebar aside.widget_shopping_cart .cont_cart .price {
     color: #444;
     margin: 10px 0 0 0;
-    font: normal 12px/17px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
+    font: 400 12px/17px 'Open Sans', Arial, Verdana, serif;
 }
 #sidebar aside.widget_shopping_cart .buttons{
     border: 0 none;
@@ -1635,7 +1635,7 @@ h1.post_title,
     width: 307px;
 }
 #content.catalog .products.list h3.title{
-    font: normal 13px/20px 'Open Sans', Arial, Verdana, serif; font-weight: 400;
+    font: 400 13px/20px 'Open Sans', Arial, Verdana, serif;
     overflow: hidden;
     padding: 0 0 15px 0;
     text-overflow: ellipsis;
@@ -1702,7 +1702,7 @@ a.more:hover{
 #content.catalog .products.list .cart .price{
     color: #2e8f9a;
     display: block;
-    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
     margin: 0 0 20px 0;
 }
 #content.catalog .products.list .cart .price .from{
@@ -2055,7 +2055,7 @@ a.more:hover{
 }
 .product_page .entry_content .price-block{
     float: right;
-    font: normal 18px/20px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/20px 'Open Sans', Myriad Pro, Verdana, serif;
     color: #2e8f9a;
     margin: 0 0 20px 0;
     position: relative;
@@ -2127,7 +2127,7 @@ a.more:hover{
 }
 #content.product_page .entry_content form.cart .single_variation_wrap .single_variation .price{
     float: right;
-    font: normal 18px/33px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/33px 'Open Sans', Myriad Pro, Verdana, serif;
     color: #2e8f9a;
 }
 #content.product_page .entry_content form.cart .single_variation_wrap .single_variation .price del .amount{
@@ -2237,7 +2237,7 @@ a.more:hover{
     padding: 0 20px;
     height: 33px;
     color: #777;
-    font: normal 13px/34px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 13px/34px 'Open Sans', Myriad Pro, Verdana, serif;
     text-decoration: none;
     border: 1px solid #f1f3f5;
     background: #f1f3f5;
@@ -2255,7 +2255,7 @@ a.more:hover{
 .woocommerce-tabs .tabs .active a{
     cursor: default;
     color: #444;
-    font: normal 13px/34px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 13px/34px 'Open Sans', Myriad Pro, Verdana, serif;
     text-decoration: none;
     border: 1px solid #e0e0e0;
     border-bottom: 1px solid #fff;
@@ -2310,7 +2310,7 @@ a.more:hover{
 #tab-reviews #comments .commentlist li .autor{
     float: left;
     color: #444;
-    font: normal 14px/21px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 14px/21px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 #tab-reviews #comments .commentlist li time{
     color: #777;
@@ -2729,7 +2729,7 @@ a.more:hover{
 }
 .cart-collaterals .cart_totals .total td span, 
 .cart-collaterals .cart_totals .total th strong{
-    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
     color: #444;
 }
 .cart-collaterals .cart_totals td strong .amount{
@@ -2870,7 +2870,7 @@ table.compare tr .desc{
     padding: 15px 0 020px;
     width: 160px;
     color: #444!important;
-    font: bold 14px/14px 'Open Sans', Arial, Verdana, serif; font-weight: 600;
+    font: 600 14px/14px 'Open Sans', Arial, Verdana, serif;
     text-align: left;
     vertical-align: top;
 }
@@ -2910,7 +2910,7 @@ table.compare tr .desc{
 }
 .compare_popup_container .compare_popup_wrap .compare_popup_table td .compare_price{
     color: #2e8f9a;
-    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
     margin: 0 0 10px;
 }
 .compare_popup_container .compare_popup_wrap .compare_popup_table td .compare_price del .amount{
@@ -2971,7 +2971,7 @@ div.light_square .pp_close:hover{
     text-align: center;
 }
 .left_404 h1.text_404{
-    font: bold 100px/70px 'Open Sans', Arial, Verdana, serif; font-weight: 600;
+    font: 600 100px/70px 'Open Sans', Arial, Verdana, serif;
     color: #e43750;
 }
 .left_404 h6{color: #999;}
@@ -3017,7 +3017,7 @@ form.checkout h3{
     padding: 0 20px;
     margin: 0 -20px 20px;
     color: #444;
-    font: normal 18px/49px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/49px 'Open Sans', Myriad Pro, Verdana, serif;
     background: #f5f7f9;
 }
 .form-row{
@@ -3138,18 +3138,18 @@ article.post+article.post{
 .search article.post h2.entry-title a{
     color: #444;
     text-decoration: none;
-    font: normal 20px/20px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 20px/20px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 article.post h1 a{
     color: #444;
     text-decoration: none;
-    font: normal 20px/20px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 20px/20px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 article.post .entry-meta{
     padding: 0px 0 0 0;
     min-height: 25px;
     color: #777;
-    font: italic 12px/25px Arial, Verdana, serif; font-style: italic;
+    font: italic 12px/25px Arial, Verdana, serif;
 }
 article.post .entry-meta .comments-link{
     float: right;
@@ -3384,7 +3384,7 @@ a:hover.arows{
     height: 43px;
     padding: 3px 8px 0;
     margin: 0px;
-    font: normal 13px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 13px/18px 'Open Sans', Myriad Pro, Verdana, serif;
     color:#777;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -3422,7 +3422,7 @@ a:hover.arows{
     width: 81px;
     padding: 1px 8px 0;
     margin: 0px;
-    font: normal 12px/41px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 12px/41px 'Open Sans', Myriad Pro, Verdana, serif;
     color:#2e8f9a;
 }
 .grid .product .cart .price span.from, 
@@ -3545,7 +3545,7 @@ a:hover.arows{
 }
 .bottom_block h3{
     margin: 0;
-    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 .bottom_block p{
     margin:0 0 20px;
@@ -3669,7 +3669,7 @@ form .newsletter-submit:hover{
 .f_navigation h3{
     padding: 0 0 10px 0;
     margin: 0 0 23px 0;
-    font: normal 18px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
     border-bottom: 1px solid #e0e0e0;
 }
 ul.f_contact li{
@@ -3767,7 +3767,7 @@ list-style: none;
         -webkit-box-sizing: border-box;
         color: #444;
 	display: block;
-        font:normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+        font:400 14px/50px 'Open Sans', Myriad Pro, Verdana, serif;
         height: 50px;
         padding: 0 0 0 55px;
         text-transform: uppercase;
@@ -3799,15 +3799,15 @@ list-style: none;
         float: none;
     }
     .primary ul.menu li a{
-	border: 0 none;
-        display: block;
-	height: 39px;
-        float: none;
-	color: #777;
-        padding: 0 0 0 2.5%;
-	text-transform: capitalize;
-	font:normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
-	background-color: #fff;
+		border: 0 none;
+		display: block;
+		height: 39px;
+		float: none;
+		color: #777;
+		padding: 0 0 0 2.5%;
+		text-transform: capitalize;
+		font:400 13px/39px 'Open Sans', Myriad Pro, Verdana, serif;
+		background-color: #fff;
     }
     .primary ul.menu li+li a{
         border-top: 1px solid #e0e0e0;
@@ -4371,7 +4371,7 @@ list-style: none;
 	width: 20%;
     }
     #content.catalog .products.list .cart .price{
-        font: normal 16px/18px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+        font: 400 16px/18px 'Open Sans', Myriad Pro, Verdana, serif;
     }
     #content.catalog .products.list .cart a.add_to_cart_button,
     #content.catalog .products.list .cart a.read-more{
@@ -5024,7 +5024,7 @@ list-style: none;
         padding: 0 16px;
         color: #444;
         text-transform: uppercase;
-        font: normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+        font: 400 14px/50px 'Open Sans', Myriad Pro, Verdana, serif;
         border: 1px solid #f5f7f9;
         background: #f5f7f9;
     }
@@ -5070,7 +5070,7 @@ list-style: none;
         height: 39px;
         color: #777;
         text-transform: capitalize;
-        font: normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+        font: 400 13px/39px 'Open Sans', Myriad Pro, Verdana, serif;
         background: #fff;
     }
     .primary ul ul.sub-menu li+li a{
@@ -5092,7 +5092,7 @@ list-style: none;
     padding: 0 16px;
     color: #444;
     text-transform: uppercase;
-    font: normal 14px/50px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 14px/50px 'Open Sans', Myriad Pro, Verdana, serif;
     border: 1px solid #f5f7f9;
     background: #f5f7f9;
 }
@@ -5138,7 +5138,7 @@ list-style: none;
     height: 39px;
     color: #777;
     text-transform: capitalize;
-    font: normal 13px/39px 'Open Sans', Myriad Pro, Verdana, serif; font-weight: 400;
+    font: 400 13px/39px 'Open Sans', Myriad Pro, Verdana, serif;
     background: #fff;
 }
 *+html .primary ul ul.sub-menu li+li a{
