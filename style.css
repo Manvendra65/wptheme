@@ -1,7 +1,7 @@
 /*
 Theme Name: bigstore
 Theme URI: 
-Author: Manvendra
+Author: Manvendra Singh Rawat
 Author URI: 
 Description: bigstore e-commerce theme is created to make easy create a website.
 Version: 1.0
@@ -1004,8 +1004,8 @@ nav.private ul li a:hover{
     }
     .primary ul li.current-menu-item a{
         color: #fff;
-        background: #78c4cd;
-        border: 1px solid #6fb7bf;
+        background: #e43750;
+        border: 1px solid #e43750;
     }
 
     .primary ul ul.sub-menu{

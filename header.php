@@ -60,6 +60,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<header class="header">
+
 <div class="container_12">
     <div id="top">
         <div class="grid_3 ">
@@ -130,6 +133,8 @@
         </div><!-- .grid_6 -->
     </header><!-- #branding -->
 </div><!-- .container_12 -->
+
+</header>
 
 <div class="clear"></div>
 
