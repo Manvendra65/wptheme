@@ -39,10 +39,10 @@ function wps_add_ie_html5_shim() {
 require_once (TEMPLATEPATH . '/inc/admin-menu.php');
 
 add_theme_support( 'custom-header', array(
-        'default-image' =>  get_template_directory_uri() . '/images/logo.png',
+	'default-image' =>  get_template_directory_uri() . '/images/logo.png',
 	'width'         => 228,
 	'height'        => 70,
-        'flex-width'    => true,
+	'flex-width'    => true,
 	'flex-height'   => true,
 	'header-text'   => false,
 ) );
@@ -95,11 +95,11 @@ function bigstore_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// This theme uses wp_nav_menu() in one location.
-        register_nav_menu( 'private', __( 'Private Menu', 'bigstore' ) );
+	register_nav_menu( 'private', __( 'Private Menu', 'bigstore' ) );
 	register_nav_menu( 'primary', __( 'Primary Menu', 'bigstore' ) );
-        register_nav_menu( 'information', __( 'Footer First Menu', 'bigstore' ) );
-        register_nav_menu( 'servise', __( 'Footer Second Menu', 'bigstore' ) );
-        register_nav_menu( 'my-account', __( 'Footer Third Menu', 'bigstore' ) );
+	register_nav_menu( 'information', __( 'Footer First Menu', 'bigstore' ) );
+	register_nav_menu( 'servise', __( 'Footer Second Menu', 'bigstore' ) );
+	register_nav_menu( 'my-account', __( 'Footer Third Menu', 'bigstore' ) );
 
 	// Add support for a variety of post formats
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );
