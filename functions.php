@@ -16,6 +16,7 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 function bigstore_jscss() {
     wp_enqueue_style('jquery-ui', 'http://code.jquery.com/ui/1.10.1/themes/overcast/jquery-ui.min.css');
     wp_enqueue_style('bigstore', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('fontawesome', get_template_directory_uri() . '/css/font-awesome.css');
     wp_enqueue_style('jqzoom', get_template_directory_uri() . '/css/jquery.jqzoom.css');
 
     wp_register_script( 'carouFredSel', get_template_directory_uri() . '/js/jquery.carouFredSel-6.2.0-packed.js', array(), '6.2.0', true);

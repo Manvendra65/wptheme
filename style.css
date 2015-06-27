@@ -3608,14 +3608,14 @@ form .newsletter-submit:hover{
 /**********
  * footer *
  **********/
-.f_navigation{
+.footer_navigation{
     padding: 35px 0;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     background: url(./images/bg_footer.png) repeat left top;
     clear: both;
 }
-.f_navigation h3{
+.footer_navigation h3{
     padding: 0 0 10px 0;
     margin: 0 0 23px 0;
     font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
@@ -3634,55 +3634,32 @@ background: url(./images/li_phone.png) no-repeat 0px 50%;
 ul.f_contact li+li+li{
 background: url(./images/li_let.png) no-repeat 0px 50%;
 }
-.f_navigation nav.f_menu ul{
+.footer_navigation nav.f_menu ul{
 list-style: none;
 }
-.f_navigation nav.f_menu ul a{
+.footer_navigation nav.f_menu ul a{
     color: #777;
     font: 12px/22px Arial, Verdana, serif;
 }
-.f_navigation nav.f_menu ul a:hover{
+.footer_navigation nav.f_menu ul a:hover{
     text-decoration: underline;
     color: #444;
 }
-.f_info{
-    height: 70px;
+.footer_info{
+	padding: 10px 0;
     background: #f9fbfc;
 }
-.f_info p.copyright{
+.footer_info p.copyright{
     color: #999;
-    font: 11px/70px Arial, Verdana, serif;
+    font: 11px/24px Arial, Verdana, serif;
 }
-.soc{
-    margin: 23px 0 0 0;
+.socialBox{
 }
-.soc a{
+.socialBox a{
     display: block;
     float: right;
-    width: 21px;
-    height: 21px;
     margin: 0 0 0 4px;
-    background-image: url(./images/bg_soc.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-.soc a.facebook{
-    background-position: 0 0;
-}
-.soc a.twitter{
-    background-position: -21px 0;
-}
-.soc a.google{
-    background-position: -42px 0;
-}
-.soc a:hover.facebook{
-    background-position: -63px 0;
-}
-.soc a:hover.twitter{
-    background-position: -84px 0;
-}
-.soc a:hover.google{
-    background-position: -105px 0;
+	font-size: 24px;
 }
 
 /**************
@@ -4515,10 +4492,10 @@ list-style: none;
     /**********
      * footer *
      **********/
-    .f_navigation{
+    .footer_navigation{
         text-align: center;
     }
-    .f_navigation .grid_3{
+    .footer_navigation .grid_3{
         display: inline-block;
         float: none;
         margin-bottom: 30px;
@@ -4531,7 +4508,7 @@ list-style: none;
     ul.f_contact li{
         display: inline-block;
     }
-    .f_info .grid_6{
+    .footer_info .grid_6{
         width: 45%;
     }
     
@@ -4888,10 +4865,10 @@ list-style: none;
     /**********
      * footer *
      **********/
-    .f_info .grid_6 {
+    .footer_info .grid_6 {
         width: 100%;
     }
-    .f_info p.copyright{
+    .footer_info p.copyright{
         text-align: center;
     }
     .soc{

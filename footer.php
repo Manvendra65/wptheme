@@ -2,7 +2,7 @@
 </section><!-- #main -->
 
 <footer>
-    <div class="f_navigation">
+    <div class="footer_navigation">
         <div class="container_12">
             <div class="grid_3">
                 <h3>Contact Us</h3>
@@ -62,9 +62,9 @@
             <div class="clear"></div>
             		
         </div><!-- .container_12 -->
-    </div><!-- .f_navigation -->
+    </div><!-- .footer_navigation -->
     
-    <div class="f_info">
+    <div class="footer_info">
         <div class="container_12">
             <div class="grid_6">
                 <p class="copyright"><?php echo get_option('bigstore_copyright'); ?></p>
@@ -74,24 +74,28 @@
             $google_url = trim(get_option('bigstore_google'));
             $twitter_url = trim(get_option('bigstore_twitter'));
             $facebook_url = trim(get_option('bigstore_facebook'));
+            $linkedin_url = trim(get_option('bigstore_linkedin'));
             ?>
             <div class="grid_6">
-                <div class="soc">
+                <div class="socialBox">
                     <?php if (strlen($google_url)): ?>
-                    <a class="google" href="<?php echo $google_url ?>"></a>
+                    <a href="<?php echo $google_url ?>"><i class="fa fa-google-plus-square"></i></a>
                     <?php endif ?>
                     <?php if (strlen($twitter_url)): ?>
-                    <a class="twitter" href="<?php echo $twitter_url ?>"></a>
+                    <a href="<?php echo $twitter_url ?>"><i class="fa fa-twitter-square"></i></a>
                     <?php endif ?>
                     <?php if (strlen($facebook_url)): ?>
-                    <a class="facebook" href="<?php echo $facebook_url ?>"></a>
+                    <a href="<?php echo $facebook_url ?>"><i class="fa fa-facebook-square"></i></a>
+                    <?php endif ?>
+                    <?php if (strlen($linkedin_url)): ?>
+                    <a href="<?php echo $linkedin_url ?>"><i class="fa fa-linkedin-square"></i></a>
                     <?php endif ?>
                 </div><!-- .soc -->
             </div><!-- .grid_6 -->
         
             <div class="clear"></div>
         </div><!-- .container_12 -->
-    </div><!-- .f_info -->
+    </div><!-- .footer_info -->
 </footer>
 
 <?php wp_footer(); ?>

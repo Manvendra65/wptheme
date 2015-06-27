@@ -19,6 +19,7 @@ register_setting( 'bigstore-settings-group', 'bigstore_copyright' );
 register_setting( 'bigstore-settings-group', 'bigstore_facebook' );
 register_setting( 'bigstore-settings-group', 'bigstore_twitter' );
 register_setting( 'bigstore-settings-group', 'bigstore_google' );
+register_setting( 'bigstore-settings-group', 'bigstore_linkedin' );
 }
 
 function bigstore_settings_page() {
@@ -68,6 +69,11 @@ function bigstore_settings_page() {
 <tr valign="top">
     <th scope="row">Link Google</th>
     <td><textarea name="bigstore_google"><?php echo get_option('bigstore_google'); ?></textarea></td>
+</tr>
+
+<tr valign="top">
+    <th scope="row">Link Linkedin</th>
+    <td><textarea name="bigstore_linkedin"><?php echo get_option('bigstore_linkedin'); ?></textarea></td>
 </tr>
 
 </table>
