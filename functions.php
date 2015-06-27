@@ -10,6 +10,9 @@ License URI: http://themeforest.net/licenses/regular_extended
 */
 
 add_action('wp_enqueue_scripts', 'bigstore_jscss');
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 function bigstore_jscss() {
     wp_enqueue_style('jquery-ui', 'http://code.jquery.com/ui/1.10.1/themes/overcast/jquery-ui.min.css');
     wp_enqueue_style('bigstore', get_template_directory_uri() . '/style.css');

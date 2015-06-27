@@ -657,56 +657,6 @@ body{
 .welcome a:hover{
     text-decoration: underline;
 }
-.valuta, .lang{
-    float: right;
-}
-.valuta ul, .lang ul{
-    list-style: none;
-}
-.valuta ul li, .lang ul li{
-    float: left;
-}
-.valuta ul li a,
-.lang ul li a{
-    margin: 9px 0 0 1px;
-    width: 27px;
-    height: 36px;
-    background: #e6e9ed;
-    color: #444;
-    display: block;
-    text-align: center;
-    float: left;
-    line-height: 36px;
-    text-decoration: none;
-}
-.valuta ul li.curent a,
-.lang ul li.curent a{
-    margin: 0px 0 0 1px;
-    padding: 9px 0 0 0;
-    background: #e43750!important;
-    color: #fff;
-    text-decoration: none;
-    font: 600 11px/36px Arial, Verdana, serif;
-    float: left;
-}
-.lang{
-    margin: 0 23px 0 0;
-}
-.lang ul li a{
-    width: 36px;
-    font: normal 11px/36px Arial, Verdana, serif;
-}
-.lang ul li a:hover,
-.valuta ul li a:hover{
-    background:#d5e4f1;
-    text-decoration: none;
-}
-.valuta ul li.curent a{
-    font: 600 13px/36px 'Open Sans', Arial, Verdana, serif;
-}
-.valuta ul li a{
-    font: 400 13px/36px 'Open Sans', Arial, Verdana, serif;
-}
 
 /**********
 * Header *

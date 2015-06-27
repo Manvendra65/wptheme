@@ -65,7 +65,7 @@
 
 <div class="container_12">
     <div id="top">
-        <div class="grid_3 ">
+        <div class="grid_6 ">
             <div class="phone_top">
                 <span>Call Us <?php echo get_option('bigstore_phone'); ?></span>
             </div><!-- .phone_top -->
@@ -87,13 +87,6 @@
             </div><!-- .welcome -->
         </div><!-- .grid_6 -->
 
-        <div class="grid_3">
-            <div class="valuta">
-            </div><!-- .valuta -->
-
-            <div class="lang">
-            </div><!-- .lang -->
-        </div><!-- .grid_3 -->
     </div><!-- #top -->
     
     <div class="clear"></div>
