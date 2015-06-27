@@ -3621,18 +3621,28 @@ form .newsletter-submit:hover{
     font: 400 18px/18px 'Open Sans', Myriad Pro, Verdana, serif;
     border-bottom: 1px solid #e0e0e0;
 }
-ul.f_contact li{
+ul.f_contact li:before { 
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	font-size: 16px; 
+	font-family: FontAwesome;
+	content: "\f041";
+}
+ul.f_contact li{ 
+	position: relative;
     list-style: none;
     margin: 0 0 7px 0;
     padding: 0 0 0 25px;
-    background: url(./images/li_adr.png) no-repeat 1px 50%;
     font: 12px/22px Arial, Verdana, serif;
 }
-ul.f_contact li+li{
-background: url(./images/li_phone.png) no-repeat 0px 50%;
+ul.f_contact li+li:before{
+	font-family: FontAwesome;
+	content: "\f095";
 }
-ul.f_contact li+li+li{
-background: url(./images/li_let.png) no-repeat 0px 50%;
+ul.f_contact li+li+li:before{
+	font-family: FontAwesome;
+	content: "\f003";
 }
 .footer_navigation nav.f_menu ul{
 list-style: none;
