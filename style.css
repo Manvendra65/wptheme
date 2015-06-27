@@ -3659,8 +3659,7 @@ form .newsletter-submit:hover{
  * footer *
  **********/
 .f_navigation{
-    min-height: 195px;
-    padding: 58px 0;
+    padding: 35px 0;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     background: url(./images/bg_footer.png) repeat left top;
