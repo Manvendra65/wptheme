@@ -1,12 +1,19 @@
 jQuery(document).ready(function(){
 
-jQuery(".niceRadio").each(
-function() {     
-     changeRadioStart(jQuery(this));     
-});
+	jQuery("input[type='radio']").each(function() {  
+	   
+		 changeRadioStart(jQuery(this));     
+	});
 
 });
 
+jQuery( document ).ajaxComplete(function() {
+	
+	jQuery("input[type='radio']").each(function(e) {  
+		
+		 changeRadioStart(jQuery(this));     
+	});
+});
 
 
 function changeRadio(el)
@@ -64,9 +71,8 @@ function changeVisualRadio(input)
 }
 
 function changeRadioStart(el)
-
 {
-
+jQuery(this).addClass('niceRadio');
 try
 {
 var el = el,

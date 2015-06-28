@@ -1,18 +1,21 @@
 // JavaScript Document
 jQuery(document).ready(function(){
-
-jQuery(".niceCheck").each(
-function() {
-     
-     changeCheckStart(jQuery(this));
-     
+	jQuery("input[type='checkbox']").each(
+		function() {
+			changeCheckStart(jQuery(this));
+		}
+	);
 });
 
-                                        });
-
+jQuery( document ).ajaxComplete(function() {
+	jQuery("input[type='checkbox']").each(
+		function() {
+			changeCheckStart(jQuery(this));
+		}
+	);
+});
 
 function changeCheck(el)
-
 {
 
 	var el = el,
@@ -35,7 +38,7 @@ function changeCheck(el)
 function changeVisualCheck(input)
 {
 
-var wrapInput = input.parent();
+	var wrapInput = input.parent();
 	if(!input.attr("checked")) {
 		wrapInput.removeClass("niceChecked");
 	}
@@ -45,13 +48,11 @@ var wrapInput = input.parent();
 	}
 }
 
-function changeCheckStart(el)
-
-{
-
+function changeCheckStart(el){
+jQuery(this).addClass('niceCheck');
 try
 {
-var el = el,
+	var el = el,
 	checkName = el.attr("name"),
 	checkId = el.attr("id"),
 	checkChecked = el.attr("checked"),

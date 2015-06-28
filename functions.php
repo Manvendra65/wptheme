@@ -18,13 +18,11 @@ function bigstore_jscss() {
     wp_enqueue_style('bigstore', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('fontawesome', get_template_directory_uri() . '/css/font-awesome.css');
     wp_enqueue_style('jqzoom', get_template_directory_uri() . '/css/jquery.jqzoom.css');
-
     wp_register_script( 'carouFredSel', get_template_directory_uri() . '/js/jquery.carouFredSel-6.2.0-packed.js', array(), '6.2.0', true);
     wp_register_script( 'touchSwipe', get_template_directory_uri() . '/js/jquery.touchSwipe.min.js', array(), '1.3.3', true);
     wp_register_script( 'jqzoom', get_template_directory_uri() . '/js/jquery.jqzoom-core.js', array(), '2.3', true);
     wp_register_script( 'checkbox', get_template_directory_uri() . '/js/checkbox.js', array(), false, true);
     wp_register_script( 'radio', get_template_directory_uri() . '/js/radio.js', array(), false, true);
-
     wp_enqueue_script( 'bigstore', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'carouFredSel', 'touchSwipe', 'jqzoom', 'checkbox', 'radio'), false, true);
 }
 
