@@ -3437,6 +3437,7 @@ a:hover.arows{
     border-left: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     text-indent: -9999px;
+	position: relative;
 }
 .grid .product .cart .woo_compare_button_container, 
 .related .product .cart .woo_compare_button_container, 
@@ -3454,12 +3455,21 @@ a:hover.arows{
 .grid .product .cart .add_to_cart_button, 
 .related .product .cart .add_to_cart_button, 
 .upsells .product .cart .add_to_cart_button{
-    background-color: #f5f7f9;
-    background-image: url(./images/bg_bay.png);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    border-right: 0 none; 
     float: right;
+}
+.grid .product .cart .add_to_cart_button:before, 
+.related .product .cart .add_to_cart_button:before, 
+.upsells .product .cart .add_to_cart_button:before{ 
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 40px;
+	line-height: 39px; 
+	text-align: center;
+	text-indent: 0;
+	font-family: 'FontAwesome';
+	content: "\f217";
+	font-size: 18px;
 }
 .grid .product .cart .add_to_cart_button.added, 
 .related .product .cart .add_to_cart_button.added, 
@@ -3467,7 +3477,8 @@ a:hover.arows{
 .grid .product .cart .add_to_cart_button.added:hover, 
 .related .product .cart .add_to_cart_button.added:hover, 
 .upsells .product .cart .add_to_cart_button.added:hover{
-    background: url(./images/bg_bay_added.png) no-repeat 50% 50% #4eac15;
+    background: #4eac15; 
+	color: #fff;
 }
 .grid .product .cart .add_to_cart_button:hover,
 .grid .product .cart .woo_bt_compare_this:hover, 

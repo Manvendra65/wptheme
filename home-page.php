@@ -71,7 +71,7 @@ Template Name: Home Page
                         </div><!-- .c_header -->
 
                         <div class="list_carousel grid">
-                            <?php the_content(); ?>
+                            <?php echo do_shortcode('[recent_products order="desc" per_page="12"]'); ?>
                         </div><!-- .list_carousel -->
                     </div><!-- .carousel -->
                 <?php endwhile; ?>
