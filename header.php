@@ -63,25 +63,25 @@
 
 <header class="header">
 
-<div class="container_12">
-    <div id="top">
-        <div class="grid_6 ">
+<div id="top">
+	<div class="container_12">
+        <div class="grid_6">
             <div class="phone_top">
-                <span>Call Us <?php echo get_option('bigstore_phone'); ?></span>
+                <i class="fa fa-phone"></i> <span>Call Us <?php echo get_option('bigstore_phone'); ?></span>
             </div><!-- .phone_top -->
         </div><!-- .grid_3 -->
 
         <div class="grid_6">
-            <div class="welcome">
+            <div class="welcome right-align">
                 <?php
                     if (function_exists("woocommerce_get_page_id"))
                     $myaccount_link = get_permalink(woocommerce_get_page_id('myaccount'));
                     $logout = wp_logout_url(home_url());
                     if ( is_user_logged_in() ) {
                         $current_user = wp_get_current_user();
-                        echo 'Welcome, '. $current_user->user_login .' (<a href="'.$logout.'">Logout</a>)';
+                        echo 'Hi, '. $current_user->user_login .' ( <a href="'.$logout.'">LOG OUT</a> )';
                     } else {
-                        echo 'Welcome visitor you can <a href="'.$myaccount_link.'">login</a> or <a href="'.$myaccount_link.'">create an account</a>.';
+                        echo 'Welcome visitor you can <a href="'.$myaccount_link.'">LOGIN</a> or <a href="'.$myaccount_link.'">CREATE AN ACCOUNT</a>.';
                     };
                 ?>
             </div><!-- .welcome -->
@@ -89,8 +89,12 @@
 
     </div><!-- #top -->
     
+</div>
+   
     <div class="clear"></div>
-    
+
+<div class="container_12">
+
     <header id="branding" role="banner">
         <div class="grid_3">
             <hgroup>

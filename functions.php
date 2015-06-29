@@ -42,7 +42,7 @@ require_once (TEMPLATEPATH . '/inc/admin-menu.php');
 
 add_theme_support( 'custom-header', array(
 	'default-image' =>  get_template_directory_uri() . '/images/logo.png',
-	'width'         => 228,
+	'width'         => 70,
 	'height'        => 70,
 	'flex-width'    => true,
 	'flex-height'   => true,

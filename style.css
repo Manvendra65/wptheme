@@ -77,6 +77,10 @@ body{
     width: 984px;
     position: relative;
 }
+.right-align { 
+	text-align: right; 
+}
+
 /*** Grid < 1007 ***/
 @media only screen and (min-width: 748px) and (max-width: 1007px) {
     body{
@@ -638,17 +642,16 @@ body{
 * Top *
 *******/
 #top{
-    height: 45px;
+	background: #444;
+	color: #fff;
+	float: left;
+	width: 100%;
 }
 .phone_top{
-    padding: 0 0 0 24px;
-    margin: 9px 0 0 0;
-    background: url(./images/bg_phone_top.png) no-repeat left center;
-    font: normal 11px/36px Arial, Verdana, serif;
+    font: normal 12px/36px Arial, Verdana, serif;
 }
+.phone_top .fa { margin-right: 10px; font-size: 17px; }
 .welcome{
-    margin: 9px 0 0 0;
-    color: #777;
     font: 400 12px/36px 'Open Sans', Myriad Pro, Verdana, serif;
 }
 .welcome a{
@@ -663,18 +666,19 @@ body{
 **********/
 header#branding{
     width: 100%;
-    height: 125px;
-    margin: 35px 0 0 0;
+	padding: 20px 0;
+    margin: 0px 0 0 0;
+	float: left;
 }
 header#branding .grid_6{
-    height: 100px;
     position: relative;
     z-index: 1001;
 }
 #site_logo{
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0;
     padding: 0;
 }
+#site_logo img { float: left; }
 #site_description{
     font: italic 400 11px/16px 'Open Sans', Myriad Pro, Verdana, serif; font-style: italic;
     color: #aaa;
@@ -698,7 +702,6 @@ form.search .entry_form,
     border-radius: 2px;
     -moz-border-radius: 2px;
     -khtml-border-radius: 2px;
-
     font: normal 12px Arial, Verdana, serif;
 }
 form.search input.entry_form:hover, 
@@ -732,20 +735,33 @@ form.search input.entry_form:focus,
     text-decoration: none;
     font: normal 11px/35px Arial, Verdana, serif;
     background-color: #f1f3f5;
-    background-image: url(./images/bg_cart_nav.png);
-    background-repeat: no-repeat;
-    background-position: 10px 50%;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -khtml-border-radius: 2px;
     cursor: pointer;
+	position: relative;
+}
+#cart_nav .cart_li:before {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 40px;
+	line-height: 35px; 
+	text-align: center;
+	text-indent: 0;
+	font-family: 'FontAwesome';
+	content: "\f217";
+	font-size: 18px;
+	color: #e43750;
 }
 #cart_nav .cart_li:hover{
     color: #fefefe;
     text-align: center;
     text-decoration: none;
-    background-image: url(./images/bg_cart_nav_h.png);
     background-color: #e43750;
+}
+#cart_nav .cart_li:hover:before {
+	color: #fff;
 }
 #cart_nav .cart_list{
     display: none;
@@ -922,9 +938,7 @@ nav.private ul li a:hover{
     margin: 0;
     position: relative;
     z-index: 1000;
-}
-#block_nav_primary .grid_12{
-    background: #f5f7f9;
+	background: #f5f7f9;
 }
 .primary .menu-select{
     display: none;
@@ -3477,8 +3491,9 @@ a:hover.arows{
 .grid .product .cart .add_to_cart_button.added:hover, 
 .related .product .cart .add_to_cart_button.added:hover, 
 .upsells .product .cart .add_to_cart_button.added:hover{
-    background: #4eac15; 
+    background: #e43750; 
 	color: #fff;
+	border: #e43750;
 }
 .grid .product .cart .add_to_cart_button:hover,
 .grid .product .cart .woo_bt_compare_this:hover, 
@@ -3511,7 +3526,7 @@ a:hover.arows{
 }
 .bottom_block p{
     margin:0 0 20px;
-    font: normal 11px/17px Arial, Verdana, serif;
+    font: normal 12px/17px Arial, Verdana, serif;
 }
 #content .bottom_block ul{
     list-style: none;
@@ -3654,6 +3669,9 @@ list-style: none;
     float: right;
     margin: 0 0 0 4px;
 	font-size: 24px;
+}
+.socialBox a:hover{
+	color: #444;
 }
 
 /**************
@@ -4114,8 +4132,8 @@ list-style: none;
     header#branding{
         height: auto;
         overflow: hidden;
-        padding: 0 0 75px 0;
         text-align: center;
+		padding-bottom: 75px;
     }
     #branding .grid_3{
         min-width: 145px;
@@ -4152,7 +4170,7 @@ list-style: none;
     .slid_text p span{
         font-size: 14px;
     }
-    
+    #site_logo img { float: none; }
     /**************
      * Top button *
      **************/
