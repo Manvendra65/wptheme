@@ -18,12 +18,14 @@ function bigstore_jscss() {
     wp_enqueue_style('bigstore', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('fontawesome', get_template_directory_uri() . '/css/font-awesome.css');
     wp_enqueue_style('jqzoom', get_template_directory_uri() . '/css/jquery.jqzoom.css');
+    wp_enqueue_style('mCustomScrollbarcss', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.css');
     wp_register_script( 'carouFredSel', get_template_directory_uri() . '/js/jquery.carouFredSel-6.2.0-packed.js', array(), '6.2.0', true);
     wp_register_script( 'touchSwipe', get_template_directory_uri() . '/js/jquery.touchSwipe.min.js', array(), '1.3.3', true);
     wp_register_script( 'jqzoom', get_template_directory_uri() . '/js/jquery.jqzoom-core.js', array(), '2.3', true);
     wp_register_script( 'checkbox', get_template_directory_uri() . '/js/checkbox.js', array(), false, true);
     wp_register_script( 'radio', get_template_directory_uri() . '/js/radio.js', array(), false, true);
-    wp_enqueue_script( 'bigstore', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'carouFredSel', 'touchSwipe', 'jqzoom', 'checkbox', 'radio'), false, true);
+    wp_register_script( 'mCustomScrollbar', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.concat.min.js', array(), '3.1.12', true);
+    wp_enqueue_script( 'bigstore', get_template_directory_uri() . '/js/main.js', array('jquery', 'jquery-ui-core', 'carouFredSel', 'touchSwipe', 'jqzoom','checkbox', 'radio','mCustomScrollbar'), false, true);
 }
 
 add_action( 'wp_head', 'wps_add_ie_html5_shim' );
@@ -97,7 +99,6 @@ function bigstore_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'private', __( 'Private Menu', 'bigstore' ) );
 	register_nav_menu( 'primary', __( 'Primary Menu', 'bigstore' ) );
 	register_nav_menu( 'information', __( 'Footer First Menu', 'bigstore' ) );
 	register_nav_menu( 'servise', __( 'Footer Second Menu', 'bigstore' ) );
@@ -198,8 +199,8 @@ function bigstore_widgets_init() {
 		'name' => __( 'Home First Column', 'bigstore' ),
 		'id' => 'bottom-block-1',
 		'description' => __( 'An optional widget area for your site footer', 'bigstore' ),
-		'before_widget' => '<div class="bottom_block about_as">',
-		'after_widget' => "</div>",
+		'before_widget' => '<div class="bottom_block about_as"><div class="mCustomScrollbar">',
+		'after_widget' => "</div></div>",
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );
@@ -207,8 +208,8 @@ function bigstore_widgets_init() {
 		'name' => __( 'Home Second Column', 'bigstore' ),
 		'id' => 'bottom-block-2',
 		'description' => __( 'An optional widget area for your site footer', 'bigstore' ),
-		'before_widget' => '<div class="bottom_block news">',
-		'after_widget' => "</div>",
+		'before_widget' => '<div class="bottom_block news"><div class="mCustomScrollbar">',
+		'after_widget' => "</div></div>",
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );
@@ -216,8 +217,8 @@ function bigstore_widgets_init() {
 		'name' => __( 'Home Third Column', 'bigstore' ),
 		'id' => 'bottom-block-3',
 		'description' => __( 'An optional widget area for your site footer', 'bigstore' ),
-		'before_widget' => '<div class="bottom_block newsletter">',
-		'after_widget' => "</div>",
+		'before_widget' => '<div class="bottom_block newsletter"><div class="mCustomScrollbar">',
+		'after_widget' => "</div></div>",
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );
@@ -444,29 +445,6 @@ function query_post_type($query) {
     }
 }
 endif;
-
-//Home Banners
-add_action( 'init', 'home_banners_type' );
-function home_banners_type() {
-register_post_type( 'home_banners',
-     array(
-            'labels' => array(
-            'name' => __( 'Home Banners', 'bigstore' ),
-            'singular_name' => __( 'Banner', 'bigstore' ),
-            'has_archive' => true,
-            'add_new' => 'Add New Banner',
-            'not_found' => 'No found.',
-            'not_found_in_trash' => 'In the cart slides found'
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'supports' => array(
-                'title',
-                'editor',
-            ),
-           
-       ));
-}
 
 if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'post_thumbnail', 52, 52, TRUE );

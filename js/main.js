@@ -11,6 +11,23 @@ jQuery(document).ready(function($){
         $(".added_to_cart").closest(".product").find(".add_to_cart_button").addClass('added');
         $('.add_to_cart_button.added').text('Added');
     });
+	
+	jQuery("#content_bottom .textwidget").mCustomScrollbar({
+		autoHideScrollbar:true,
+		theme:"rounded"
+	});
+	
+	$(window).on("scroll", function () {
+		if ($(this).scrollTop() > 37) {
+			$(".StickyHeader").addClass('fixed');
+			$("#main").addClass('main');
+		}
+		else {
+			$(".StickyHeader").removeClass('fixed');
+			$("#main").removeClass('main');
+		}
+	})
+	
 });
 
 $('.woo_bt_compare_this').click(function(){

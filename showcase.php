@@ -1,6 +1,6 @@
 <?php
 
-wp_enqueue_script( 'bigstore-showcase', get_template_directory_uri() . '/js/showcase.js', array( 'jquery' ), '2011-04-28' );
+wp_enqueue_script( 'bigstore-showcase', get_template_directory_uri() . '/js/show.js', array( 'jquery' ), '2015-06-15' );
 
 get_header(); ?>
 

@@ -93,43 +93,50 @@
    
     <div class="clear"></div>
 
-<div class="container_12">
+<div class="StickyHeader">
 
-    <header id="branding" role="banner">
-        <div class="grid_3">
-            <hgroup>
-		<h1 id="site_logo">
-                    <a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home">
-                        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-                    </a>
-                </h1>
-            </hgroup>
-        </div><!-- .grid_3 -->
-        
-        <div class="grid_3">
-            <?php 
-                if (class_exists('WooCommerce_Widget_Product_Search')){
-                    the_widget( 'WooCommerce_Widget_Product_Search', 'title=');
-                } else if (class_exists('WC_Widget_Product_Search')) {
-                    the_widget( 'WC_Widget_Product_Search', 'title=');
-                } else {
-                    get_search_form();
-                }
-            ?>
-        </div><!-- .grid_3 -->
-        
-        <div class="grid_6">
-            <div id="cart_nav">
-                <div class="widget_shopping_cart_content widget_shopping_cart">
-                    <?php if (function_exists('woocommerce_mini_cart')) woocommerce_mini_cart(); ?>
-                </div>
-            </div><!-- #cart_nav -->
-            <nav class="private">
-                 <?php wp_nav_menu( array( 'theme_location' => 'private' ) ); ?>
-            </nav><!-- .private -->
-        </div><!-- .grid_6 -->
-    </header><!-- #branding -->
-</div><!-- .container_12 -->
+    <div class="container_12">
+    
+        <header id="branding" role="banner">
+            <div class="grid_2">
+                <hgroup>
+            <h1 id="site_logo">
+                        <a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home">
+                            <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+                        </a>
+                    </h1>
+                </hgroup>
+            </div><!-- .grid_2 -->
+            
+            <div class="grid_3">
+                <?php 
+                    if (class_exists('WooCommerce_Widget_Product_Search')){
+                        the_widget( 'WooCommerce_Widget_Product_Search', 'title=');
+                    } else if (class_exists('WC_Widget_Product_Search')) {
+                        the_widget( 'WC_Widget_Product_Search', 'title=');
+                    } else {
+                        get_search_form();
+                    }
+                ?>
+            </div><!-- .grid_3 -->
+            
+            <div class="grid_7">
+                <div id="cart_nav">
+                    <div class="widget_shopping_cart_content widget_shopping_cart">
+                        <?php if (function_exists('woocommerce_mini_cart')) woocommerce_mini_cart(); ?>
+                    </div>
+                </div><!-- #cart_nav -->
+                <nav class="private">
+                     <ul>
+                        <li><a href="<?php echo esc_url( home_url( '/my-account/' ) ); ?>"><?php _e( 'My Account', 'bigstore' ); ?></a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/cart/' ) ); ?>"><?php _e( 'Cart', 'bigstore' ); ?></a></li>
+                     </ul>
+                </nav><!-- .private -->
+            </div><!-- .grid_7 -->
+        </header><!-- #branding -->
+    </div><!-- .container_12 -->
+    
+</div>
 
 </header>
 

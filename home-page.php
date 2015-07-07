@@ -39,19 +39,6 @@ Template Name: Home Page
 
 <div class="clear"></div>
 
-<div id="top_button">
-    <?php $home_banners = new WP_Query('post_type=home_banners'); ?>
-    <?php if ($home_banners->have_posts()) : ?>
-    <?php while ($home_banners->have_posts() ) : $home_banners->the_post(); ?>
-        <div class="grid_4">
-            <?php the_content(); ?>
-        </div><!-- .grid_4 -->
-    <?php endwhile; ?>
-    <?php endif; ?>
-
-    <div class="clear"></div>
-</div><!-- #top_button -->
-
 <div id="primary">
 	<div id="content" role="main">
             <?php $posts = query_posts($query_string.''); ?>
